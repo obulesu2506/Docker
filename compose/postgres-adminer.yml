@@ -1,0 +1,14 @@
+---
+version: '3.8'
+services:
+  mydb:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: intelliqit
+      POSTGRES_USER: myuser
+      POSTGRES_DB: mydb
+  myadminer:
+    image: adminer
+    ports:
+      - 8888:80
+...
