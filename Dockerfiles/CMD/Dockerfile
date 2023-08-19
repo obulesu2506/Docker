@@ -1,5 +1,5 @@
 FROM almalinux:latest
-RUN apt update -y
-RUN apt install -y nginx
+RUN yum update -y
+RUN yum install -y nginx
 CMD ["nginx","-g","daemon off;"]
 CMD ["sleep 20"]
