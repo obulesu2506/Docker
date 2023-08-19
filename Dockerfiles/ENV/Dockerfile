@@ -1,0 +1,3 @@
+FROM mysql:5
+MAINTAINER dockersql
+ENV MYSQL_ROOT_PASSWORD=sqldocker
